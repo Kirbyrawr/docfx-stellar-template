@@ -1,11 +1,24 @@
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css");
-
 /* Clickability fix for selector on sm devices */
 @media (min-width: 768px) and (max-width: 991px) {
   article h1:first-of-type:before {
     height: 0;
     margin-top: 0;
-  }  
+  }
+}
+
+body {
+  color: #E3E0DA;
+  font-weight: 400;
+  font-family: Segoe UI,SegoeUI,Segoe WP,Helvetica Neue,Helvetica,Tahoma,Arial,sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+.button, a {
+  color: #FFA51E;
+}
+
+button:focus, button:hover, a:focus, a:hover {
+  color: #ff7a00;
 }
 
 #search {
@@ -19,14 +32,32 @@
 .sidetoc,
 body .toc,
 .sidefilter,
-.sidetoggle { 
-  background-color: #f9fbe7; 
+.sidetoggle {
+  background-color: #171717;
+  border-width: 0px;
 }
 
 .sidenav,
 .toc-toggle {
   padding: 0;
 }
+
+/*Edited by Kirby*/
+html, body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #171717;
+}
+
+.toc-filter {
+  background-color: inherit;
+  border: 1px solid #454545;
+}
+
+.toc-filter:hover {
+  border-color: #737373;
+}
+
+/* End of Edit */
 
 .sidetoggle {
   padding-bottom: 15px;
@@ -112,21 +143,21 @@ article h4 {
 .affix ul > li > a:hover,
 .affix ul > li.active > a,
 .affix ul > li > a:focus {
-  color: #563d7c;                 
-  text-decoration: none;          
-  background-color: transparent;  
-  border-left-color: #563d7c; 
+  color: #563d7c;
+  text-decoration: none;
+  background-color: transparent;
+  border-left-color: #563d7c;
 }
 
 /* all active links */
-.affix ul > li.active > a, 
+.affix ul > li.active > a,
 .affix ul > li.active:hover > a,
 .affix ul > li.active:focus >a {
     font-weight: 700;
 }
 
 /* nested active links */
-.affix ul ul > li.active > a, 
+.affix ul ul > li.active > a,
 .affix ul ul > li.active:hover > a,
 .affix ul ul > li.active:focus > a {
     font-weight: 500;
@@ -191,9 +222,10 @@ article h4 {
 /* Custom Navbar
    ------------------------------------------------------- */
 .navbar-inverse {
-  background-color: #318f7c;
+  background-color: #000;
+  border-color: #454545;
+  border-width: 1px;
   opacity: 0.95;
-  border-color: #02735f;
 }
 .navbar-inverse .navbar-brand {
   color: #ffffff;
@@ -205,18 +237,21 @@ article h4 {
 .navbar-inverse .navbar-text {
   color: #ffffff;
 }
+
 .navbar-inverse .navbar-nav > li > a {
   color: #ffffff;
 }
+
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus {
-  color: #ecdbff;
+  color: #FFFFFF;
+  text-decoration: underline;
 }
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus {
-  color: #ecdbff;
-  background-color: #02735f;
+  color: #000000;
+  background-color: #FFA51E;
 }
 .navbar-inverse .navbar-nav > .open > a,
 .navbar-inverse .navbar-nav > .open > a:hover,
@@ -259,4 +294,70 @@ article h4 {
     color: #ecdbff;
     background-color: #02735f;
   }
+}
+
+/* Custom SubNavBar */
+.subnav
+{
+ background-color: #171717;
+ border-color: #454545;
+ border-width: 1px;
+}
+
+/* Custom TocFilter */
+.toc-filter > input {
+  background-color: inherit;
+}
+
+
+/* Custom Toc Nav */
+.toc {
+  padding: 0px;
+}
+
+.toc .level1 > li {
+  margin-top: 0px;
+}
+
+.toc .nav > li > a {
+  font-weight: normal;
+  color: #E3E0DA;
+  font-size: 14px;
+  padding: 5px 0px 5px 1rem;
+}
+
+.toc .nav > li.active > a {
+  background-color: #242424;
+  font-weight: 600;
+  font-size: 14px;
+  color: #E3E0DA;
+  padding: 5px 0px 5px 1rem;
+}
+
+.toc .nav > li > a:hover, .toc .nav > li > a:focus {
+  color: #E3E0DA;
+  text-decoration: underline;
+  font-size: 14px;
+  padding: 5px 0px 5px 1rem;
+}
+
+.toc .nav > li.active > a:hover, .toc .nav > li.active > a:focus {
+  background-color: #242424;
+  font-weight: 600;
+  font-size: 14px;
+  color: #E3E0DA;
+  text-decoration: underline;
+  padding: 5px 0px 5px 1rem;
+}
+
+/* Code */
+code {
+  color: #7D00FF;
+  background-color: #000000;
+}
+
+/* Container */
+.container-fluid {
+  margin-left: 70px;
+  margin-right: 70px;
 }
