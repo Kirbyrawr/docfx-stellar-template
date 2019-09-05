@@ -143,10 +143,10 @@ article h4 {
 .affix ul > li > a:hover,
 .affix ul > li.active > a,
 .affix ul > li > a:focus {
-  color: #563d7c;
+  color: #FFA51E;
   text-decoration: none;
   background-color: transparent;
-  border-left-color: #563d7c;
+  border-left-color: #FF841E;
 }
 
 /* all active links */
@@ -352,8 +352,20 @@ article h4 {
 
 /* Code */
 code {
-  color: #7D00FF;
-  background-color: #000000;
+  color: #8762ef;
+  background-color: #0f0f0f;
+}
+
+pre {
+  background-color: #131313;
+}
+
+blockquote {
+  border-left: 4px solid #ff7d19;
+}
+
+.hljs {
+  color: #fff;
 }
 
 /* Container */
