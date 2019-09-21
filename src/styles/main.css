@@ -1,3 +1,5 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css");
+
 /* Clickability fix for selector on sm devices */
 @media (min-width: 768px) and (max-width: 991px) {
   article h1:first-of-type:before {
@@ -18,6 +20,10 @@ body {
 }
 
 button:focus, button:hover, a:focus, a:hover {
+  color: #ff7a00;
+}
+
+.btn.focus, .btn:focus, .btn:hover {
   color: #ff7a00;
 }
 
@@ -221,11 +227,14 @@ article h4 {
 
 /* Custom Navbar
    ------------------------------------------------------- */
+   .navbar-nav {
+     margin-left: 10px;
+   }
 .navbar-inverse {
   background-color: #000;
   border-color: #454545;
   border-width: 1px;
-  opacity: 0.95;
+  opacity: 1;
 }
 .navbar-inverse .navbar-brand {
   color: #ffffff;
@@ -260,14 +269,14 @@ article h4 {
   background-color: #02735f;
 }
 .navbar-inverse .navbar-toggle {
-  border-color: #02735f;
+  border-color: #f39e1e;
 }
 .navbar-inverse .navbar-toggle:hover,
 .navbar-inverse .navbar-toggle:focus {
-  background-color: #02735f;
+  background-color: black;
 }
 .navbar-inverse .navbar-toggle .icon-bar {
-  background-color: #ffffff;
+  background-color: #f39e1e;
 }
 .navbar-inverse .navbar-collapse,
 .navbar-inverse .navbar-form {
@@ -307,8 +316,13 @@ article h4 {
 /* Custom TocFilter */
 .toc-filter > input {
   background-color: inherit;
+  color: #fff;
 }
 
+.sidenav, .fixed_header, .toc {
+background-color: #131313;
+border-radius: 5px;
+}
 
 /* Custom Toc Nav */
 .toc {
@@ -323,7 +337,7 @@ article h4 {
   font-weight: normal;
   color: #E3E0DA;
   font-size: 14px;
-  padding: 5px 0px 5px 1rem;
+  padding: 5px 0px 5px 0px;
 }
 
 .toc .nav > li.active > a {
@@ -331,14 +345,14 @@ article h4 {
   font-weight: 600;
   font-size: 14px;
   color: #E3E0DA;
-  padding: 5px 0px 5px 1rem;
+  padding: 5px 10px 5px 10px;
 }
 
 .toc .nav > li > a:hover, .toc .nav > li > a:focus {
   color: #E3E0DA;
   text-decoration: underline;
   font-size: 14px;
-  padding: 5px 0px 5px 1rem;
+  padding: 5px 10px 5px 10px;
 }
 
 .toc .nav > li.active > a:hover, .toc .nav > li.active > a:focus {
@@ -347,14 +361,15 @@ article h4 {
   font-size: 14px;
   color: #E3E0DA;
   text-decoration: underline;
-  padding: 5px 0px 5px 1rem;
+  padding: 5px 10px 5px 10px;
 }
 
 /* Code */
 code {
-  color: #8762ef;
-  background-color: #0f0f0f;
+  color: #ffffff;
+  background-color: #242424;
 }
+
 
 pre {
   background-color: #131313;
@@ -368,8 +383,40 @@ blockquote {
   color: #fff;
 }
 
+.table-bordered > tbody > tr > td {
+  background-color: #131313;
+}
+
+/* Bootstrap Info Boxes */
+.alert-info {
+  color: #0da5df;
+  background-color: #131313;
+  border-color: #0da5df;
+}
+
+.alert-danger {
+  color: #df0d0d;
+  background-color: #131313;
+  border-color: #df0d0d;
+}
+
+/* Bootstrap Button */
+.btn-info {
+  background-color: #0da5df;
+}
+
+.btn-warning {
+  background-color: #df9a0d;
+}
+
 /* Container */
 .container-fluid {
   margin-left: 70px;
   margin-right: 70px;
+}
+
+/* Footer */
+.footer {
+  background-color: #000;
+  border-top: 1px solid #454545;
 }
