@@ -9,7 +9,7 @@
 }
 
 body {
-  color: #E3E0DA;
+  color: #E3E3E3;
   font-weight: 400;
   font-family: Segoe UI,SegoeUI,Segoe WP,Helvetica Neue,Helvetica,Tahoma,Arial,sans-serif;
   text-rendering: optimizeLegibility;
@@ -325,43 +325,35 @@ border-radius: 5px;
 }
 
 /* Custom Toc Nav */
-.toc {
-  padding: 0px;
-}
-
 .toc .level1 > li {
   margin-top: 0px;
 }
 
 .toc .nav > li > a {
   font-weight: normal;
-  color: #E3E0DA;
+  color: #E3E3E3;
   font-size: 14px;
   padding: 5px 0px 5px 0px;
 }
 
 .toc .nav > li.active > a {
-  background-color: #242424;
   font-weight: 600;
   font-size: 14px;
-  color: #E3E0DA;
-  padding: 5px 10px 5px 10px;
+  color: #FFA51E;
+  padding: 5px 10px 5px 0px;
 }
 
 .toc .nav > li > a:hover, .toc .nav > li > a:focus {
-  color: #E3E0DA;
-  text-decoration: underline;
+  color: #979797;
   font-size: 14px;
-  padding: 5px 10px 5px 10px;
+  padding: 5px 10px 5px 0px;
 }
 
 .toc .nav > li.active > a:hover, .toc .nav > li.active > a:focus {
-  background-color: #242424;
   font-weight: 600;
   font-size: 14px;
-  color: #E3E0DA;
-  text-decoration: underline;
-  padding: 5px 10px 5px 10px;
+  color: #BE7A13;
+  padding: 5px 10px 5px 0px;
 }
 
 /* Code */
